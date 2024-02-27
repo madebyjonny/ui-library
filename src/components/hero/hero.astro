@@ -1,0 +1,12 @@
+---
+import styles from "./hero.module.css";
+const { image } = Astro.props;
+---
+
+<article class={styles.hero} data-image-variant={image}>
+  <slot name="top" />
+  <div class={styles.content}>
+    <slot />
+  </div>
+  <slot name="bottom" />
+</article>

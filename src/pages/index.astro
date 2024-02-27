@@ -1,16 +1,117 @@
 ---
-
+import Button from "../components/button/button.astro";
+import Grid from "../components/grid/grid.astro";
+import Hero from "../components/hero/hero.astro";
+import Header from "../components/header/header.astro";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <style>
+    body,
+    html {
+      padding: 0;
+      margin: 0;
+    }
+  </style>
+  <body>
+    <Grid>
+      <Hero>
+        <Header>
+          <h1>This is an example of Hero content</h1>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+              nesciunt impedit, est ex aliquid sit omnis dolor quo, magni
+              dolores voluptatum ratione amet repudiandae officia ad
+              perspiciatis, facere molestias ducimus!
+            </p>
+            <a href="#">Help us</a>
+          </div>
+        </Header>
+        <img src="/hero-image.jpg" alt="Hero image" />
+      </Hero>
+      <Hero image="background">
+        <Header>
+          <h1>This is an example of Hero content</h1>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+              nesciunt impedit, est ex aliquid sit omnis dolor quo, magni
+              dolores voluptatum ratione amet repudiandae officia ad
+              perspiciatis, facere molestias ducimus!
+            </p>
+            <a href="#">Help us</a>
+          </div>
+        </Header>
+        <img src="/hero-image.jpg" alt="Hero image" />
+      </Hero>
+      <Hero image="full">
+        <Header>
+          <h1>This is an example of Hero content</h1>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+              nesciunt impedit, est ex aliquid sit omnis dolor quo, magni
+              dolores voluptatum ratione amet repudiandae officia ad
+              perspiciatis, facere molestias ducimus!
+            </p>
+            <a href="#">Help us</a>
+          </div>
+        </Header>
+        <img src="/hero-image.jpg" alt="Hero image" slot="top" />
+      </Hero>
+      <Hero image="full">
+        <Header>
+          <h1>This is an example of Hero content</h1>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+              nesciunt impedit, est ex aliquid sit omnis dolor quo, magni
+              dolores voluptatum ratione amet repudiandae officia ad
+              perspiciatis, facere molestias ducimus!
+            </p>
+            <a href="#">Help us</a>
+          </div>
+        </Header>
+        <img src="/hero-image.jpg" alt="Hero image" slot="bottom" />
+      </Hero>
+      <Hero image="match">
+        <Header>
+          <h1>This is an example of Hero content</h1>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+              nesciunt impedit, est ex aliquid sit omnis dolor quo, magni
+              dolores voluptatum ratione amet repudiandae officia ad
+              perspiciatis, facere molestias ducimus!
+            </p>
+            <a href="#">Help us</a>
+          </div>
+        </Header>
+        <img src="/hero-image.jpg" alt="Hero image" slot="bottom" />
+      </Hero>
+      <Hero image="match">
+        <Header variant="column">
+          <h1>This is an example of Hero content</h1>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+              nesciunt impedit, est ex aliquid sit omnis dolor quo, magni
+              dolores voluptatum ratione amet repudiandae officia ad
+              perspiciatis, facere molestias ducimus!
+            </p>
+            <a href="#">Help us</a>
+          </div>
+        </Header>
+        <img src="/hero-image.jpg" alt="Hero image" slot="bottom" />
+      </Hero>
+    </Grid>
+  </body>
 </html>

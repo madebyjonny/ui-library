@@ -1,0 +1,8 @@
+---
+import styles from "./header.module.css";
+const { variant } = Astro.props;
+---
+
+<header class={styles.header} data-variant={variant}>
+  <slot />
+</header>

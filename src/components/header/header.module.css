@@ -1,0 +1,9 @@
+.header {
+  padding: 24px 0;
+}
+
+.header[data-variant="column"] {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
